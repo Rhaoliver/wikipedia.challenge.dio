@@ -1,4 +1,4 @@
-#HTML II - Etapa mais avançada
+#HTML II - Etapa avançada
 
 
 ## Acessibilidade
@@ -80,3 +80,43 @@ utilizar o alt="" para descrever a imagem
 - Search Engine Optimization (otimização para mecanismos de buscas)
 - conjunto de técnicas que visam melhorar o posicionamento numa busca
 - <h2 id="seo">.</h2>
+
+### Como fazer?
+- title: 50-60 caracteres, sendo uma descrição sucinta da página, para aparecer no mecanismo de busca "<title></title>"
+- meta name: descrição sucinta também "<meta name="description" content="blá blá blá">"
+- caprichar na semântica do HTML, utilizando tags e sections
+- schema.org: comunidade que visa a melhoria dos mecanismos de buscas
+
+
+
+
+## HTML Recursos Especiais
+
+### Datalist
+- options do combo box, sugerindo informações (sem obrigar a selecionar como a tag selected) a serem preenchidas
+
+<input> 
+<datalist>
+    <options></options>
+    <options></options>
+    <options></options>
+</datalist>
+
+
+### Code
+- tag indicando um código a ser usado
+- tags voltadas para colocar comandos ou fontes na página HTML
+- formatação pré-definida; fontes monoespaçadas
+
+### Kbd
+- keyboard, indicando um comando do teclado
+- tags voltadas para colocar comandos ou fontes na página HTML
+- formatação pré-definida; fontes monoespaçadas
+
+
+### Pre
+- tag que pode ser utilizada para agrupar vários códigos e serem indicados 
+- tags voltadas para colocar comandos ou fontes na página HTML
+- formatação pré-definida; fontes monoespaçadas
+
+
