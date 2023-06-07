@@ -120,3 +120,89 @@ utilizar o alt="" para descrever a imagem
 - formatação pré-definida; fontes monoespaçadas
 
 
+### Details
+- detalhes, podendo colocar por exemplo, descriçoes
+
+<details> // dessa forma, ao ser clicado, irá expandir para exibir o "p"
+    <summary></summary>
+    <p><code></code></p>
+</details>
+
+#### Summary
+- já visto anteriormente, mas dentro da tag details, exibe um título sobre os dados que estão contidos
+
+### Meter
+- utilizado com a finalidade de medir (e não de progresso como o progress), com valores que podem aumentar ou diminuir
+
+<meter id="progress" max="100" min="0" value="50"></meter>
+
+
+### Progress
+- utilizado para definir o progresso de uma ação: "carregando" por exemplo
+- atributos "max" "min" e "value" 
+
+ex: barra de progresso
+
+<progress id="progress" max="100" min="0" value="0"></progress>
+
+<script>
+    var progress = document.getElementById('progress');
+    const interval = setInterval(() => {
+        progress.value += 10;
+        if (progress.value >= 100) {
+            alert('Carregamento realizado com sucesso')
+            clearInterval(interval);
+        }
+    }, 1000);
+</script>
+
+
+
+### Mark
+- já visto anteriormente
+
+
+### Javascript
+- manipula o HTML
+- manipula o DOM (manipula dinâmicamente o HTML que já foi renderizado pelo browser)
+
+
+#### Canvas
+- utilizado na programação de jogos
+- manipulação do javascript para a criação de animações e outras coisas do tipo (curso separado, bem extenso)
+
+
+## HTML 5, novos atributos
+
+### Autofocus
+- atributo que coloca uma barrinha que fica piscando na tela nos campos de digitação, como por exemplo em formulários
+- ex: <input type="" id="" name="" autofocus>
+
+
+### Placeholder
+- atributo que sugestiona um estilo de preenchimento
+- ex: <input type="" id="" name="" placeholder="Ex: meuemail@gmail.com">
+
+### Required
+- atributo que define um campo como obrigatório
+- aparece campo obrigatório ao tentar enviar
+### Fieldset
+- englobamento de um campo <form><fieldset><legend></legend></fieldset></form>
+- desabilitar um campo
+- ex: <fieldset disabled>
+
+
+### Maxlength
+- determina um máximo de caracteres para campos como o textarea
+
+
+### Minlength
+- determina um mínimo de caracteres para campos como o textarea
+
+
+### tag form
+- não precisa mais estar englobando tudo, podendo os campos do formulário serem referenciados pelo form="" nos atributos da tag
+
+
+### content editable
+- atributo que permite que, ao carregar a página, o conteúdo possa ser editado pelo usuário
