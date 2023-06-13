@@ -1,26 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Desafio Wikipedia - Página Principal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <meter id="meter" max="100" min="0" value="50"></meter>
-
-    <progress id="progress" max="100" min="0" value="0"></progress>
-
-        <script>
-            var progress = document.getElementById('progress');
-            const interval = setInterval(() => {
-                progress.value += 10;
-                if (progress.value >= 100) {
-                    alert('Carregamento realizado com sucesso')
-                    clearInterval(interval);
-                }
-            }, 1000);
+    <header>   
+        <section id="menuList">
+            <button class="hamburguer" aria-expanded="false" >
+                <i id="barrasMenu" class="fa-solid fa-bars"></i>
+                <!-- <i class="menuIcon material-icons">menu</i>
+                <i class="closer material-icons" style="display:none"></i> -->
+            </button>
+            <ul class="menu" style="display: none; background-color: rgb(248, 246, 242);">
+                <li><a class="menuItem" href="./index.html">Página Principal</a></li>
+                <li><a class="menuItem" href="./eravitoriana.html">Artigo Destaque</a></li>
+                <li><a class="menuItem" href="#">Portais</a></li>
+                <li><a class="menuItem" href="#events">Eventos</a></li>
+                <li><a class="menuItem" href="#">Colaboração</a></li>
+                <li><a class="menuItem" href="#">Contato</a></li>
+                <li><a class="menuItem" href="#">Doações</a></li>
+                <li><a class="menuItem" href="#">Ajuda</a></li>
+            </ul>
+        </section>
+        <section class="logo">
+            <img src="./assets/img/continents-of-earth.png" alt="logotipo do site, simbolizando o mundo com a imagem de um globo terrestre" width="80"/>
+            <div>
+                <h4> Desafio Wikipedia</h4>
+                <h5> A enciclopédia livre</h5>
+            </div>
+        </section>
+        <section class="search">
+            <input type="text" placeholder="Pesquisar no Desafio Wikipedia">
+        </section>
+        <section id="links">
+            <ul class="links">
+                <li>
+                    <a href="#">Criar uma conta</a>
+                </li>
+                <li>
+                    <a href="#">Entrar</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section class="page">
+            <section class="emphasis">
+                <article class="textPage">
+                    <h1> Artigo em destaque</h1>
+                    <hr>
+                    <h2>Era Vitoriana</h2>
+                    <br>
+                    <p>Na história do Reino Unido, a era vitoriana foi o período do reinado da rainha Vitória, de junho de 1837 até sua morte em janeiro de 1901. Localiza-se entre o período georgiano e o eduardiano, e a sua segunda metade coincide com o começo da Belle Époque na Europa continental. Alguns estudiosos poderiam estender o início do período à aprovação do Ato de Reforma de 1832, como a marca do verdadeiro início de uma nova era cultural.</p>
+                    <p>Foi um longo período de paz e relativa prosperidade para o povo britânico, também conhecido como Pax Britannica, com os lucros adquiridos a partir da expansão e domínio do Império Britânico no exterior, bem como o auge e consolidação da Revolução Industrial e o surgimento de novas invenções. Tudo isso permitiu que uma grande e instruída classe média se desenvolvesse. Dos grandes nomes do pensamento moderno foram forjados na época: Charles Darwin e Sigmund Freud. Apesar dos seus impulsos de modernização na ciência, no mergulho do indivíduo e na dinâmica econômica, esta Era foi marcada também por rígidos costumes, moralismo social e sexual, fundamentalismo religioso e exploração capitalista.</p>
+                    <figure>
+                        <img src="./assets/img/rainhavitoriainicio.jpg" alt="Pintura da rainha Vitória, pousando sentada e olhando para a frente. A rainha Vitória está vestida com um vestido claro, contendo detalhes em ouro e vermelho.">
+                        <figcaption>
+                            Pintura simbolizando a rainha Vitória, a qual deu nome para o período mencionado neste texto.
+                        </figcaption>
+                    </figure>
+                    
+                    <h4><a href="./eravitoriana.html" class="more"> Leia mais </a></h4>
+                </article>
+            </section>
+            <section class="events" id="events">
+                <article class="textPage" id="textNews">
+                    <h1> Eventos atuais</h1>
+                    <hr>
+                    <ul>
+                        <li class="news">
+                            <h4>Mundo</h4>
+                            <a href=""><b> Notícias sobre a Guerra na Ucrânia</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Meio Ambiente</h4>
+                            <a href=""><b> Queimadas no Canadá</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Economia</h4>
+                            <a href=""><b> Índice Ibovespa recua no Brasil</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Esportes</h4>
+                            <a href=""><b> Manchester City derrota inter de Milão</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Leitura</h4>
+                            <a href=""><b> Conheça os novos lançamentos no <u><i>kindle Unlimited</i></u> desse mês</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Mundo</h4>
+                            <a href=""><b> Nikolai Denkov assume cargo de primeiro-ministro da Bulgária</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Meio Ambiente</h4>
+                            <a href=""><b> Incêndios florestais no Canadá causam evacuações e pioram as condições da qualidade do ar</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Celebridades</h4>
+                            <a href=""><b> Cantora e atriz Tina Turner morre aos 83 anos de idade</b></a>
+                        </li>
+                        <li class="news">
+                            <h4>Saúde</h4>
+                            <a href=""><b> Organização Mundial da Saúde declara que a pandemia de COVID-19 deixou de ser uma Emergência de Saúde Pública de Âmbito Internacional</b></a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer >
+        <h6>Esta página foi editada pela última vez às 18h09min de 12 de junho de 2023. Texto elaborado com parágrafos do site https://pt.wikipedia.org/wiki/Era_vitoriana</h6>
+    </footer>
+    
+    <script>
+        const menu = document.querySelector(".menu");
+        const hamburguer = document.querySelector(".hamburguer");
+        // const barrasMenu = document.querySelector("#barrasMenu");
         
-        </script>
+        function toggleMenu() {
+            if (menu.classList.contains("showMenu")) {
+                menu.classList.remove("showMenu");
+                // barrasMenu.classList.remove("fa-solid fa-bars");
+                // barrasMenu.classList.add("fa-solid fa-ellipsis-vertical");
+            }
+            else {
+                menu.classList.add("showMenu");
+                // barrasMenu.classList.remove("fa-solid fa-bars");
+                // barrasMenu.classList.add("fa-solid fa-ellipsis-vertical");
+            }
+        }
+        hamburguer.addEventListener("click", toggleMenu);
+    </script>
 </body>
 </html>

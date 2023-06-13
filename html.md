@@ -205,4 +205,8 @@ ex: barra de progresso
 
 
 ### content editable
+<<<<<<< HEAD
 - atributo que permite que, ao carregar a página, o conteúdo possa ser editado pelo usuário
+=======
+- atributo que permite que, ao carregar a página, o conteúdo possa ser editado pelo usuário
+>>>>>>> 2b5430ac25f3e7ca091a1a1bc4fbfdf5b78c5020
